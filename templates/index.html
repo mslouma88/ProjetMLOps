@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+           <div class="container">
+            <h1>Analyse Prédictive des Prêts Personnels</h1>
+            <form id="prediction-form" action="{{ url_for('predict')}}" method="post">
+                <div class="form-group">
+                    <label for="credit_lines_outstanding">Lignes de crédit en cours:</label>
+                    <input type="number" id="credit_lines_outstanding" name="credit_lines_outstanding" required>
+                </div>
+                <div class="form-group">
+                    <label for="loan_amt_outstanding">Montant du prêt en cours:</label>
+                    <input type="number" id="loan_amt_outstanding" name="loan_amt_outstanding" required>
+                </div>
+                <div class="form-group">
+                    <label for="total_debt_outstanding">Total de la dette en cours:</label>
+                    <input type="number" id="total_debt_outstanding" name="total_debt_outstanding" required>
+                </div>
+                <div class="form-group">
+                    <label for="income">Revenu:</label>
+                    <input type="number" id="income" name="income" required>
+                </div>
+                <div class="form-group">
+                    <label for="years_employed">Années d'emploi:</label>
+                    <input type="number" id="years_employed" name="years_employed" required>
+                </div>
+                <div class="form-group">
+                    <label for="fico_score">Score FICO:</label>
+                    <input type="number" id="fico_score" name="fico_score" required>
+                </div>
+                <button type="submit" class="btn" >Prédire</button>
+            </form>
+            <div class="result" id="result">{{ prediction_text }}</div>
+        </div>
+
+        <!--<br><br><h3>{{ prediction_text }}<h3>-->
+    </div>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</body>
+
+</html>

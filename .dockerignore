@@ -1,0 +1,5 @@
+README.md
+.git*
+.env/
+mlruns/
+__pycache__/
