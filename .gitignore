@@ -2,5 +2,4 @@
 __pycache__/
 mlruns/
 preprocessing.py
-test.py
 .pytest_cache/
