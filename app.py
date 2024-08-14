@@ -27,11 +27,8 @@ def predict():
         income = float(request.form["income"])
         ye = int(request.form["years_employed"])
         fs = int(request.form["fico_score"])
-        
 
-        prediction = model.predict(
-            [[clo, lao, tbo, income, ye, fs]]
-        )
+        prediction = model.predict([[clo, lao, tbo, income, ye, fs]])
 
         if prediction[0] == 1:
             return render_template(
@@ -48,5 +45,5 @@ def predict():
         return render_template("index.html")
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)

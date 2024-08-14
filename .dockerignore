@@ -3,3 +3,4 @@ README.md
 .env/
 mlruns/
 __pycache__/
+.pytest_cache/
