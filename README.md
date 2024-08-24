@@ -48,15 +48,15 @@ L'équipe de risque (notre équipe) souhaite analyser le portefeuille de prêts 
     ```bash
     docker build -t prediction-defauts-app .
     ```
-- Déployons l'application sur le cloud via ******.
+- Déployons l'application sur le cloud via AWS.
 - Partagons l'URL de notre application pour la démonstration.
 
-## 👥 Auteurs
+## 👥 Auteur(e)s
 
 Ce projet a été réalisé par :
 
-- **Salam MEJRI** 🧑‍💻 - [@github](https://github.com/votre-utilisateur) 
-- **Nesrine BENAMOR** 🧑‍💻 - [@github](https://github.com/votre-utilisateur)
+- **Salam MEJRI** 🧑‍💻 - [@github](https://github.com/mslouma88) 
+- **Nesrine BENAMOR** 🧑‍💻 - [@github](https://github.com/Nes890)
 
 
 ## 📄 Licence
