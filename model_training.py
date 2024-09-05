@@ -12,7 +12,7 @@ import pickle
 # Initialiser un experiment MLflow nommé "projet"
 mlflow.set_experiment("projet")
 
-# Dictionnaire pour stocker les performances des modèles
+# Dictionnaire pour stocker les performances des modèles 
 model_performances = {}
 
 def train_model(X_train, y_train, X_test, y_test, model, model_name):
@@ -30,9 +30,9 @@ def train_model(X_train, y_train, X_test, y_test, model, model_name):
         auc = roc_auc_score(y_test, model.predict_proba(X_test)[:, 1])
 
         # Afficher les résultats dans la console
-        print(f"Modèle: {model_name}")
-        print(f"Accuracy: {accuracy}")
-        print(f"AUC-ROC: {auc}")
+        print(f"Modèle : {model_name}")
+        print(f"Accuracy : {accuracy}")
+        print(f"AUC-ROC : {auc}")
         print("-" * 40)
 
         # Logguer les paramètres et métriques dans MLflow
