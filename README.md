@@ -6,6 +6,7 @@ Nous avons rejoint une nouvelle équipe dans le secteur de la **banque de détai
 
 L'objectif principal de ce projet est de construire un modèle prédictif qui **estime la probabilité de défaut** pour chaque client en fonction de ses caractéristiques. Des prédictions précises permettront à la banque d'**allouer suffisamment de capital** pour couvrir les pertes potentielles, assurant ainsi la **stabilité financière**.
 
+
 ## 🎯 Objectif
 
 L'équipe de risque (notre équipe) souhaite analyser le portefeuille de prêts existants afin de prévoir les **défauts potentiels futurs** et d'estimer la perte attendue. Notre tâche consiste à adopter une **démarche MLOps end-to-end** pour proposer à la banque un **algorithme de prédiction des risques de défaut**.
