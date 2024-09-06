@@ -4,7 +4,7 @@ import pandas as pd
 
 
 app = Flask(__name__)
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("Logistic Regression_best_model.pkl", "rb"))
 
 
 def model_pred(features):

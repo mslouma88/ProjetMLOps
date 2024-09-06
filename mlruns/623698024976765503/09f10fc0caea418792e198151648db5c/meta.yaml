@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/TUF-GAMING/Desktop/RenduMLOps/ProjetMLOps/mlruns/623698024976765503/09f10fc0caea418792e198151648db5c/artifacts
+end_time: 1725552100468
+entry_point_name: ''
+experiment_id: '623698024976765503'
+lifecycle_stage: active
+run_id: 09f10fc0caea418792e198151648db5c
+run_name: Decision Tree
+run_uuid: 09f10fc0caea418792e198151648db5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725552095650
+status: 3
+tags: []
+user_id: TUF-GAMING

@@ -15,13 +15,13 @@ L'équipe de risque (notre équipe) souhaite analyser le portefeuille de prêts 
 1. **Appropriation du sujet** : Compréhension du contexte et des données disponibles.
 2. **Pré-traitement des données** : Nettoyage, transformation et préparation des données pour l'entraînement des modèles.
 3. **Model Engineering** : Tester au moins deux algorithmes de classification (par exemple : arbre de décision, régression logistique, Random Forest).
-4. **Déploiement du meilleur modèle** : Créer une application (Streamlit/Flask) et déployer sur le cloud.
+4. **Déploiement du meilleur modèle** : Créer une application (Flask) et déployer sur le cloud.
 
 ## 🛠️ Technologies Utilisées
 
 - **Python** 🐍
 - **Scikit-Learn** 🧠
-- **Streamlit/Flask** 🌐
+- **Flask** 🌐
 - **MLflow** 📊
 - **Docker** 🐳
 - **Git & GitHub** 🔄
