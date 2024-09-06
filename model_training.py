@@ -49,6 +49,15 @@ def train_model(X_train, y_train, X_test, y_test, model, model_name):
 # Chargement des données depuis un fichier CSV
 data = pd.read_csv('data/Loan_Data.csv')
 
+# Nettoyage des données
+
+#les valeurs manquantes :
+data.isnull().sum()
+#les doublons
+data.duplicated().sum()
+#vérification s'il y a des valeurs aberrantes :
+data.describe()
+
 # Séparation des features (X) et de la variable cible (y)
 X = data.drop(columns=['customer_id', 'default'])
 y = data['default']
