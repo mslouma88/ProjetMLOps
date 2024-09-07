@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/TUF-GAMING/Desktop/RenduMLOps/ProjetMLOps/mlruns/152375435449454435/e3e4352dadb3436e8ee122858ea5aa02/artifacts
+end_time: 1725707779163
+entry_point_name: ''
+experiment_id: '152375435449454435'
+lifecycle_stage: active
+run_id: e3e4352dadb3436e8ee122858ea5aa02
+run_name: Random Forest
+run_uuid: e3e4352dadb3436e8ee122858ea5aa02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725707775291
+status: 3
+tags: []
+user_id: TUF-GAMING
