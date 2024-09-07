@@ -25,7 +25,7 @@ L'équipe de risque (notre équipe) souhaite analyser le portefeuille de prêts 
 - **MLflow** 📊
 - **Docker** 🐳
 - **Git & GitHub** 🔄
-- **AWS** ☁️
+- **AWS CLI** ☁️
 
 ## 🚀 Exécution du Projet
 
@@ -50,6 +50,53 @@ L'équipe de risque (notre équipe) souhaite analyser le portefeuille de prêts 
     ```
 - Déployons l'application sur le cloud via AWS.
 - Partagons l'URL de notre application pour la démonstration.
+
+### 5. Déploiement avec AWS ECR et Docker 🚀
+
+Ce guide vous explique comment utiliser Docker et AWS Elastic Container Registry (ECR) pour construire, tagger et pousser une image Docker vers un registre privé AWS.
+
+#### 1. Prérequis 📝
+Avant de commencer, assurez-vous d'avoir :
+- Installé la dernière version de l'[AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+- Installé Docker sur votre machine ([documentation Docker](https://docs.docker.com/get-docker/))
+- Créé un référentiel ECR dans AWS
+
+#### 2. Authentification auprès du registre AWS ECR 🔐
+Avant de pousser une image Docker dans AWS ECR, vous devez authentifier votre client Docker avec le registre.
+
+Exécutez la commande suivante dans `git bash` en remplaçant la région et l'ID de compte par les vôtres :
+
+```bash
+aws ecr get-login-password --region eu-west-3 | docker login --username AWS --password-stdin 010438493623.dkr.ecr.eu-west-3.amazonaws.com
+```
+⚠️ Remarque : Si vous recevez une erreur avec l'AWS CLI, assurez-vous d'utiliser la dernière version de l'AWS CLI et Docker.
+
+#### 3. Construction de l'image Docker 🛠️
+
+Si vous n'avez pas encore créé votre image Docker, utilisez la commande suivante pour la construire :
+
+```bash
+docker build -t mlops .
+```
+
+#### 4. Tagger l'image Docker 🏷️
+
+Une fois l'image construite, vous devez la tagger pour pouvoir la pousser dans le registre ECR :
+
+```bash
+docker tag mlops:latest 010438493623.dkr.ecr.eu-west-3.amazonaws.com/mlops:latest
+```
+#### 5. Pousser l'image Docker vers AWS ECR 📤
+
+```bash
+docker push 010438493623.dkr.ecr.eu-west-3.amazonaws.com/mlops:latest
+```
+🎉 Félicitations ! image Docker poussé votre  vers AWS ECR.
+
+#### 6. Ressources supplémentaires 📚
+
+- [Documentation AWS ECR](https://docs.aws.amazon.com/fr_fr/AmazonECR/latest/userguide/what-is-ecr.html)
+- [Documentation Docker](https://docs.docker.com/get-started/)
 
 ## 👥 Auteur(e)s
 
