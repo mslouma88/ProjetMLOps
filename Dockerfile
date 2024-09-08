@@ -1,14 +1,14 @@
 FROM python:3.12
 
-# Working Directory
+# Définir le répertoire de travail
 WORKDIR /app
 
-# Copy source code to working directory
-COPY . app.py /app/
+# Copier tous les fichiers du répertoire courant dans le répertoire de travail
+COPY . /app/
 
-# Install packages from requirements.txt
-
+# Installer les dépendances à partir du fichier requirements.txt
 RUN pip install --no-cache-dir --upgrade pip &&\
     pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt
 
-CMD python app.py
+# Commande d'exécution de l'application
+CMD ["python", "app.py"]
