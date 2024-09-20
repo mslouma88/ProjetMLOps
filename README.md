@@ -112,5 +112,4 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 
 ---
 
-Merci pour votre intérêt pour notre projet ! Si vous avez des questions, n'hésitez pas à nous contacter. 😊
-
+Merci pour votre intérêt pour notre projet ! Si vous avez des questions, n'hésitez pas à nous contacter. 😊😊
